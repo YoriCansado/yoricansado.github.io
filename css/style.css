@@ -1,0 +1,334 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*✦•······················•✦•······················•✦ -- */
+/* FONTES DO SITE*/
+
+body {
+    font-family: OptimaNovaLT, sans-serif;
+	font-style: normal;
+	color: #ffffff;
+	background-color: #0d0d0d;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #d92323;
+    padding: 15px 20px;
+	
+}
+
+/*✦•······················•✦•······················•✦ -- */
+.nav-links {
+    list-style: none;
+    display: flex;
+	transition: transform 0.2s, box-shadow 0.3s;
+}
+
+.nav-links li {
+    margin-left: 100px;
+	transition: transform 0.2s, box-shadow 0.3s;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+	transition: transform 0.2s, box-shadow 0.3s;
+}
+
+.nav-links a:hover {
+    color: #faebd4;
+	text-shadow: 0 0 10px #ffffff;
+	transform: translateY(-5px);
+}
+
+.nav-links li:hover {
+    color: #faebd4;
+	text-shadow: 0 0 10px #ffffff;
+	transform: translateY(-5px);
+}
+
+.nav-links a:active{
+    transform: scale(2);
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+}
+
+/*✦•······················•✦•······················•✦ -- */
+
+.hero {
+    text-align: center;
+    padding: 60px;
+}
+
+.hero h1 {
+    font-size: 45px;
+    color: #ffffff;
+	text-shadow: 0 0 10px #ffffff;
+}
+
+.hero p {
+    margin-top: 10px;
+	font-size: 20px;
+    color: #ffffff;
+}
+
+/*✦•······················•✦•······················•✦ -- */
+/* ESTILOS DA SEÇÃO DE SOBRE */
+
+.sobre {
+	padding: 0px 20px;
+	background: #0d0d0d;
+}
+
+.sobre h2{
+    text-align: center;
+    padding: 20px 20px;
+}
+
+.container-sobre {
+	display: flex;
+	align-items: flex-start;
+	gap: 30px;
+}
+
+.sobre-texto p {
+	color: #ffffff;
+	font-size: 20px;
+	line-height: 1.6;
+	margin-bottom: 15px;
+	flex: 1;
+}
+.grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+	gap: 20px;
+}
+
+.sobre-lista {
+	list-style: none;
+	margin-top: 30px;
+	display: flex;
+	justify-content: center;
+	gap: 30px;
+	flex-wrap: wrap;
+}
+
+.sobre-lista li {
+	margin-bottom: 10px;
+	font-size: 16px;
+	background: #d92323;
+	padding: 10px 20px;
+	border-radius: 8px;
+}
+
+/*✦•······················•✦•······················•✦ -- */
+/* AKESHU PLUSHIEEEEE */
+
+.imgakeshu {
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	transition: transform 0.1s ease, box-shadow 0.1s;
+}
+
+.imgakeshu:hover{
+	animation: jump 0.4s ease;
+}
+
+@keyframes jump {
+	30%  { transform: translateY(-15px);	}
+	100% { transform: translateY(0); }
+}
+
+/*✦•······················•✦•······················•✦ -- */
+/* Animação do Akechi plushie */
+
+/*✦•······················•✦•······················•✦ -- */
+/* ESTILOS DA SEÇÃO DE CARDS */
+
+.cards-section {
+    padding: 60px 20px;
+    background-color: #0d0d0d;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+    gap: 10px;
+}
+
+.card {
+    background: #732424;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h3 {
+    font-size: 20px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.card-content p {
+    font-size: 14px;
+    color: #732424;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+	color: #0d0d0d;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #d92323;
+	color: #ffffff;
+	transition: background-color 0.3s;
+}
+
+/*✦•······················•✦•······················•✦ -- */
+/* ESTILOS DA SEÇÃO DE DEPOIMENTOS */
+
+.feedback {
+	padding: 40px 20px;
+	background: #0d0d0d;
+	text-align: center;
+}
+
+.feedback h2{
+	text-align: center;
+	margin-bottom: 30px;
+	color: #ffffff;
+}
+
+.depo-grid {
+  column-width: 200px;
+  column-gap: 20px;
+  padding: 20px;
+}
+
+.depo-grid > * {
+  display: inline-block;
+  width: 100%;
+  margin: 0 0 20px;
+  break-inside: avoid;
+  -webkit-column-break-inside: avoid;
+}
+
+.depo-box {
+	background: #6e1d1d;
+	border-radius: 10px;
+	padding: 20px;
+	height: auto;
+}
+
+.depo-card {
+	text-align: center;
+	background: #732424;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.depo-card:hover {
+	transform: translateY(-5px);
+}
+
+.depo-card p{
+	color: #D3D3D3;
+	margin: 10px;
+	text-align: center;
+}
+
+/*✦•······················•✦•······················•✦ -- */
+
+@media (max-width: 768px) {
+
+    .nav-links {
+        position: absolute;
+        right: 0;
+        top: 60px;
+        background: #d92323;
+        flex-direction: column;
+        width: 200px;
+        display: none;
+    }
+
+    .nav-links li {
+        margin: 15px 0;
+        text-align: center;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    /* Ajuste dos cards em telas menores */
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+	.sobre {
+		padding: 50px 20px;
+	}
+	.sobre-texto h2{
+		font-size: 28px;
+	}
+	
+	.container-sobre {
+		flex-direction: column;
+	}
+}
+
+@media (max-width: 480px) {
+    .container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
