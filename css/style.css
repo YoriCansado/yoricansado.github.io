@@ -281,6 +281,9 @@ body {
 	text-align: center;
 }
 
+.depo-card h4{
+	color# D3D3D3;
+}
 /*✦•······················•✦•······················•✦ -- */
 
 @media (max-width: 768px) {
